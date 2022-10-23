@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Complete HTML Form</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "HLRF.css">
+        <script src="HLRFJS.js"></script>
+        
+
+
+            <div id="header">
+                <img id="headerPhotos" src="https://i.pinimg.com/474x/42/71/9f/42719f035553bf95c0562a84327c3b25--pictures-of-deer-deer-pics.jpg">
+                <img id="headerPhotos" src="https://images.fineartamerica.com/images-medium-large-5/turkey-gobbler-strut-timothy-flanigan.jpg">
+                <img id="headerPhotos" src="https://tpwd.texas.gov/landwater/land/habitats/trans_pecos/big_game/desertbighornsheep/images/BighornCloseup.jpg">
+                <img id="headerPhotos" src="https://www.worldatlas.com/r/w768/upload/5b/3a/d3/pronghorn.jpg">
+                <img id="headerPhotos" src="https://cdn11.bigcommerce.com/s-q1sd/product_images/uploaded_images/muledeer.jpg">
+                <img id="headerPhotos" src="https://www.fws.gov/sites/default/files/styles/banner_image_xs/public/banner_images/2022-02/mallards_Arkansas_AGFC.JPG?h=a707e7c2&itok=R-i8FjfK">
+                <img id="headerPhotos" src="https://www.gannett-cdn.com/-mm-/e379dd4d47b7a70e61880cac327176e087790a05/c=258-363-1048-1416/local/-/media/2016/03/03/Phoenix/Phoenix/635925938543508586-PNIBrd-12-23-2011-Republic-1-H008-2011-12-21-IMG--PNI1223-liv-hl-exaz-1-1-LJO463R-IMG--PNI1223-liv-hl-exaz-1-1-LJO463R.jpg?width=300&height=400&fit=crop&format=pjpg&auto=webp">
+            </div>
+
+    </head>
+
+	<body>
+   
+
+		<h1>Hunting & Fishing License Renewal Form</h1>
+
+        <div>
+            <table class="table"> 
+                <tr>
+                    <td class="label_col">First Name:</td>
+                    <td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstName();"></td>
+                    <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Last Name:</td>
+                    <td class="input_col"><input name="lastName" id="lastName" type="text" onblur="validateLastName();"></td>
+                    <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Phone Number:</td>
+                    <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+                    <td class="feedback_col"><span id="phonePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Address:</td> 
+                    <td class="input_col"><input name="address" id="address" type="text" onblur="validateAddress();"></td>
+                    <td class="feedback_col"><span id="addressPrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">State:</td>
+                    <td class="input_col"><input name="state" id="state" type="text" onblur="validateState();" placeholder="State Abbreviation"></td>
+                    <td class="feddback_col"><span id="statePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Zip Code:</td>
+                    <td class="input_col"><input name="zip" id="zip" type="text" onblur="validateZip();"></td>
+                    <td class="feedback_col"><span id="zipPrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Hunting License Number:</td>
+                    <td class="input_col"><input name="license" id="license" type="text" onblur="validateHunting();"></td>
+                    <td class="feedback_col"><span id="hunterPrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="label_col">Driver's License Number:</td>
+                    <td class="input_col"><input name="driver" id="driver" type="text" onblur="validateLicense();"></td>
+                    <td class="feedback_col"><span id="driverPrompt">&nbsp;</span></td>
+                </tr>
+                <tr id="order">
+                    <td class="Button" id="Button" colspan="1"><span class="buttonBG" onclick="calcOrder();">Submit License Renewal</span></td>
+                </tr>
+            </table>
+
+            <span id="orderConfirm">&nbsp;</span> 
+        
+        </div>
+
+    
+	</body>
+
+</html>
